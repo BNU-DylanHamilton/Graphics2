@@ -37,8 +37,8 @@ namespace Graphics2
             this.ClientSize = new System.Drawing.Size(643, 362);
             this.Name = "Form1";
             this.Text = "Drawing Rectangles  and Ellipses";
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.drawRectangle);
+            this.Load += new System.EventHandler(this.loadForm);
             this.ResumeLayout(false);
 
         }

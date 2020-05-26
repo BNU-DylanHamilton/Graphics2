@@ -18,12 +18,17 @@ namespace Graphics2
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void loadForm(object sender, EventArgs e)
         {
             this.BackColor = Color.White;
         }
 
-        private void Form1_Paint(object sender, PaintEventArgs e)
+        /// <summary>
+        /// This method draws the rectangle at the given position and then 
+        /// loops a few times with each rectangle getting smaller within 
+        /// the original rectangle
+        /// </summary>
+        private void drawRectangle(object sender, PaintEventArgs e)
         {
             int x = 80,  y = 10;     // position of rectangle
             int w = 300, h = 200;    // width and height of reactangle
